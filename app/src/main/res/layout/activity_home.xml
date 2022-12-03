@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:weightSum="2560">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="200"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/home_logo"
+        android:layout_marginBottom="15dp"
+        android:weightSum="1000">
+    </LinearLayout>
+
+    <!-- 메인 화면 탭 끝 (weight 200 사용, 2360 남음) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1800"
+        android:background="@drawable/border"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+        <ScrollView
+            android:layout_width="409dp"
+            android:layout_height="339dp"
+            android:layout_marginTop="1dp"
+            >
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="메뉴"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="9pt"
+                android:textStyle="bold" />
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="left"
+        android:background="@drawable/search_btn"
+        android:layout_marginTop="0dp"
+        android:text="식권종류" />
+
+    <Button
+        android:id="@+id/btn_count"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:background="@drawable/search_btn"
+        android:layout_marginTop="5dp"
+        android:text="수량" />
+
+    <LinearLayout
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="500"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:weightSum="1300">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/result_text"
+            android:textColor="#000000"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
